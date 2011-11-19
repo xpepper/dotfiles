@@ -1,0 +1,4 @@
+export rvm_path="/Users/pietrodibello/.rvm"
+export rvm_project_rvmrc_default=1
+export rvm_install_on_use_flag=1
+export rvm_gem_options="--no-rdoc --no-ri"

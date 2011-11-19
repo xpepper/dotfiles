@@ -1,0 +1,28 @@
+alias ll='ls -oap'
+alias ldots='ls -a | egrep "^\.[^\.]"'
+
+alias findBooks='~/findBooks.sh'
+alias studio='cd "/Users/pietrodibello/Documents/Studio Piero"'
+
+# Git
+alias gitdiff='git diff -w | mate'
+
+# Subversion
+alias svnaddall='svn st | awk -F "?" '\''{ print $2 }'\'' | xargs svn add'
+alias svnsynchronize='svn merge --dry-run -r BASE:HEAD .'
+alias svncompare='svn diff -r PREV | mate'
+alias svndiff='svn diff -x -w | mate'
+
+alias workspace='cd /Users/pietrodibello/Documents/workspace/'
+
+# Rails 2.3.*
+alias sc='script/console'
+alias ss='script/server'
+alias sdbc='script/dbconsole'
+
+# for EPI
+alias epi='cd /Users/pietrodibello/Documents/workspace/epistore/epistore'
+alias tsp='cd /Users/pietrodibello/Documents/workspace/tuttosport'
+alias sss='script/ec2/ssh-instances'
+alias rakelite='rake $* 2>/dev/null'
+alias me='script/mate.sh'

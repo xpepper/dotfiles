@@ -1,0 +1,56 @@
+shell             /bin/bash
+#term              xterm-256color
+term              xterm
+# terminfo and termcap for nice 256 color terminal
+# # allow bold colors - necessary for some reason
+attrcolor b ".I"
+# # tell screen how to set colors. AB = background, AF=foreground
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+
+defbce "on"
+#
+startup_message   off
+
+defscrollback 5000
+
+hardstatus on
+hardstatus alwayslastline
+
+# greyscale window list with datetime at right
+hardstatus string '%{= dK}%-Lw%{= dW}%50>%n%f* %t%{= dK}%+Lw%< %{= kG}%-=%D %d %M %Y %c:%s%{-}'
+
+screen -t backoffice 1
+stuff "source ~/.profile\012"
+stuff "epi\012"
+stuff "clear\012"
+stuff "script/ec2/ssh-instances num=1\012"
+
+screen -t frontend_1 2
+stuff "source ~/.profile\012"
+stuff "epi\012"
+stuff "clear\012"
+stuff "script/ec2/ssh-instances num=3\012"
+
+screen -t frontend_2 3
+stuff "source ~/.profile\012"
+stuff "epi\012"
+stuff "clear\012"
+stuff "script/ec2/ssh-instances num=4\012"
+
+screen -t stage 4
+stuff "source ~/.profile\012"
+stuff "epi\012"
+stuff "clear\012"
+stuff "script/ec2/ssh-instances num=2\012"
+
+screen -t dev-console 5
+stuff "source ~/.profile\012"
+stuff "epi\012"
+stuff "script/console\012"
+
+screen -t development 6
+stuff "source ~/.profile\012"
+stuff "epi\012"
+stuff "clear\012"
+
+defscrollback 5000
