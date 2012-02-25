@@ -3,5 +3,4 @@
 --context=1
 --follow
 --group
---all
 --type-set=eml=.eml

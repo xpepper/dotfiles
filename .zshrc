@@ -5,7 +5,6 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-# ZSH_THEME="robbyrussell"
 # ZSH_THEME="blinks"
 ZSH_THEME="bira"
 
@@ -26,15 +25,16 @@ COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git macports rails rvm gem osx)
+plugins=(git rvm gem)
+
+[[ -s "/Users/pietrodibello/.rvm/scripts/rvm" ]] && source "/Users/pietrodibello/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
 # my settings here
+export EDITOR="mate"
 source "$HOME/.aliases"
 source "$HOME/.shell_common_settings"
 source "$HOME/.epistore"
-
-[[ -s "/Users/pietrodibello/.rvm/scripts/rvm" ]] && source "/Users/pietrodibello/.rvm/scripts/rvm"  # This loads RVM into a shell session.
