@@ -1,28 +1,36 @@
-alias ll='ls -oap'
 alias ldots='ls -a | egrep "^\.[^\.]"'
 
-alias findBooks='~/findBooks.sh'
-alias studio='cd "/Users/pietrodibello/Documents/Studio Piero"'
+alias studio='cd ~/Documents/Studio\ Piero'
 
 # Git
 alias gitdiff='git diff -w | mate'
+alias gb='git branch'
+alias gc='git commit -v'
+alias gca='git commit -a -v'
+alias gco="git checkout"
+alias gd='git diff'
+alias gdc='git diff --cached' # What's added but not yet committed?
+alias gdh='git diff HEAD'
+alias gp='git push'
+alias gl='git pull'
+alias gpr='git pull --rebase'
+alias gst='git status'
+alias gap='git add -p'
+alias glod='git log --oneline --decorate'
+alias gl="git log --stat"
 
-# Subversion
-alias svnaddall='svn st | awk -F "?" '\''{ print $2 }'\'' | xargs svn add'
-alias svnsynchronize='svn merge --dry-run -r BASE:HEAD .'
-alias svncompare='svn diff -r PREV | mate'
-alias svndiff='svn diff -x -w | mate'
+alias workspace='cd ~/Documents/workspace/'
 
-alias workspace='cd /Users/pietrodibello/Documents/workspace/'
-
-# Rails 2.3.*
-alias sc='script/console'
-alias ss='script/server'
+# Rails
+alias sc="[ -f script/console ] && script/console || bundle exec rails console"
+alias ss="[ -f script/server ] && script/server || rails server"
 alias sdbc='script/dbconsole'
 
 # for EPI
-alias epi='cd /Users/pietrodibello/Documents/workspace/epistore/epistore'
-alias tsp='cd /Users/pietrodibello/Documents/workspace/tuttosport'
+alias epi='cd ~/Documents/workspace/epistore/epistore'
+alias tsp='cd ~/Documents/workspace/tuttosport'
 alias sss='script/ec2/ssh-instances'
 alias rakelite='rake $* 2>/dev/null'
 alias me='script/mate.sh'
+
+alias hosts='sudo vim /etc/hosts'

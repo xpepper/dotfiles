@@ -6,8 +6,8 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 # ZSH_THEME="robbyrussell"
-# ZSH_THEME="blinks"
 ZSH_THEME="bira"
+# ZSH_THEME="blinks"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -26,15 +26,18 @@ COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git macports rails rvm gem osx)
+plugins=(git brew rails rvm gem osx)
 
-source $ZSH/oh-my-zsh.sh
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 
 # Customize to your needs...
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:$HOME/.rvm/bin"
+export CC=gcc-4.2
 
 # my settings here
-source "$HOME/.aliases"
-source "$HOME/.shell_common_settings"
-source "$HOME/.epistore"
+source $ZSH/oh-my-zsh.sh
 
-[[ -s "/Users/pietrodibello/.rvm/scripts/rvm" ]] && source "/Users/pietrodibello/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+source "$HOME/dotfiles/.aliases"
+source "$HOME/dotfiles/.shell_common_settings"
+source "$HOME/.epistore"
+source ~/.autojump/etc/profile.d/autojump.zsh
