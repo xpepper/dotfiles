@@ -34,3 +34,6 @@ alias rakelite='rake $* 2>/dev/null'
 alias me='script/mate.sh'
 
 alias hosts='sudo vim /etc/hosts'
+
+# MongoDB
+alias mongostart='mongod run --config /usr/local/etc/mongod.conf'
