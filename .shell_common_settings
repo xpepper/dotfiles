@@ -13,13 +13,10 @@ export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home
 # export PATH=$ANT_HOME/bin:$PATH
 
 # MySQL
-export PATH=/usr/local/mysql/bin:$PATH
+# export PATH=/usr/local/mysql/bin:$PATH
 
 # Android SDK
-export PATH="$PATH:/Applications/android-sdk/tools/:/Applications/android-sdk/platform-tools/"
-
-# MacPorts Installer addition on 2010-06-17_at_09:27:26: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+# export PATH="$PATH:/Applications/android-sdk/tools/:/Applications/android-sdk/platform-tools/"
 
 # Amazon Ec2 stuff
 export PATH="/usr/local/ElasticLoadBalancing/bin:$PATH"

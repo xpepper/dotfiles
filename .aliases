@@ -1,7 +1,5 @@
 alias ldots='ls -a | egrep "^\.[^\.]"'
 
-alias studio='cd ~/Documents/Studio\ Piero'
-
 # Git
 alias gitdiff='git diff -w | mate'
 alias gb='git branch'
@@ -34,6 +32,3 @@ alias rakelite='rake $* 2>/dev/null'
 alias me='script/mate.sh'
 
 alias hosts='sudo vim /etc/hosts'
-
-# MongoDB
-alias mongostart='mongod run --config /usr/local/etc/mongod.conf'
