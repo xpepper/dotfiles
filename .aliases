@@ -1,5 +1,7 @@
 alias ldots='ls -a | egrep "^\.[^\.]"'
 
+alias studio='cd ~/Documents/studio'
+
 # Git
 alias gitdiff='git diff -w | mate'
 alias gb='git branch'
@@ -32,3 +34,9 @@ alias rakelite='rake $* 2>/dev/null'
 alias me='script/mate.sh'
 
 alias hosts='sudo vim /etc/hosts'
+
+#for Mikamai
+alias jbb='cd ~/Documents/workspace/job-board; rvm use 1.9.3-p125@job-board; rvm wrapper 1.9.3-p125@job-board textmate'
+
+# MongoDB
+# alias mongostart='mongod run --config /usr/local/etc/mongod.conf'
