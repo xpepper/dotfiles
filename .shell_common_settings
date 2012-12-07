@@ -1,3 +1,7 @@
+#Encoding stuff
+# export LC_ALL=en_US.UTF-8
+# export LC_CTYPE=en_US.UTF-8
+
 # Ruby
 export BUNDLER_EDITOR="/usr/bin/mate -w"
 export SVN_EDITOR=vim
