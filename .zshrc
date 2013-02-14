@@ -24,21 +24,26 @@ COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git rvm gem rails)
+plugins=(git brew bundler rails rvm gem osx vagrant)
 
-source $ZSH/oh-my-zsh.sh
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 
 # Customize to your needs...
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:$HOME/.rvm/bin"
-export CC=gcc-4.2
+export PATH=$PATH:"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"
 
-# my settings here
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
 source $ZSH/oh-my-zsh.sh
 
 source "$HOME/dotfiles/.aliases"
 source "$HOME/dotfiles/.shell_common_settings"
 source "$HOME/.epistore"
-source ~/.autojump/etc/profile.d/autojump.zsh
 
-export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+# autojump
+[[ -f `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+
+# disable autocorrection
+unsetopt correct_all
+
 export RUBYOPT="-ropenssl"
+# export CC=gcc-4.2
