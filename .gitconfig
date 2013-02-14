@@ -1,37 +1,37 @@
 [user]
-	name = Pietro Di Bello
-	email = pierodibello@gmail.com
+  name = Pietro Di Bello
+  email = pierodibello@gmail.com
+[core]
+  editor = mate -w
+  quotepath = false
+  excludesfile = /Users/pietrodibello/.gitignore_global
+[push]
+  default = tracking
+[rebase]
+  autosquash = true
 [color]
   branch = auto
   diff = auto
   status = auto
 [color "branch"]
   current = yellow reverse
-  local = yellow 
+  local = yellow
   remote = green
 [color "diff"]
   meta = yellow bold
   frag = magenta bold
   old = red bold
 [alias]
-	st = status
-	co = checkout
-	ci = commit
+  st = status
+  co = checkout
+  ci = commit
 [apply]
-	whitespace = nowarn
-[core]
-	editor = mate -w
-	quotepath = false
-	excludesfile = /Users/pietrodibello/.gitignore_global
-[push]
-  default = tracking
-[rebase]
-  autosquash = true
+  whitespace = nowarn
 [github]
-	user = xpepper
+  user = xpepper
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path =
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
