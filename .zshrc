@@ -29,7 +29,8 @@ plugins=(git brew bundler rails rvm gem osx vagrant)
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 
 # Customize to your needs...
-export PATH=$PATH:"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"
+# not needed anymore: changing /etc/paths fixed the folders order issue
+# export PATH=$PATH:"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
