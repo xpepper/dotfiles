@@ -24,7 +24,7 @@ COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brew bundler rails rvm gem osx vagrant)
+plugins=(git brew bundler rails rvm gem vagrant git-extras)
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 
@@ -46,5 +46,5 @@ source "$HOME/.epistore"
 # disable autocorrection
 unsetopt correct_all
 
-export RUBYOPT="-ropenssl"
+# export RUBYOPT="-ropenssl"
 # export CC=gcc-4.2
