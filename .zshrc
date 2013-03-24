@@ -46,5 +46,5 @@ source "$HOME/.epistore"
 # disable autocorrection
 unsetopt correct_all
 
-# export RUBYOPT="-ropenssl"
+export RUBYOPT="-ropenssl"
 # export CC=gcc-4.2
