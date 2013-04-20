@@ -1,23 +1,53 @@
 [user]
-	name = Pietro Di Bello
-	email = pierodibello@gmail.com
-[color]
-	ui = auto
-[alias]
-	st = status
-	co = checkout
-	ci = commit
-[apply]
-	whitespace = nowarn
+  name = Pietro Di Bello
+  email = pietro.dibello@xpeppers.com
+  # name = Pietro Di Bello
+  # email = pierodibello@gmail.com
 [core]
-	editor = mate -w
-	quotepath = false
-	excludesfile = /Users/pietrodibello/.gitignore_global
+  excludesfile = /Users/pietrodibello/.gitignore_global
+  editor = vim
+  quotepath = false
+[push]
+  default = tracking
+[rebase]
+  autosquash = true
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+[alias]
+  st = status
+  ci = commit
+  co = checkout
+  cp = cherry-pick
+  put = push origin HEAD
+  fixup = !sh -c 'git commit -m \"fixup! $(git log -1 --format='\\''%s'\\'' $@)\"' -
+  squash = !sh -c 'git commit -m \"squash! $(git log -1 --format='\\''%s'\\'' $@)\"' -
+  ri = rebase --interactive
+  br = branch
+  pruneremote = remote prune origin
+  tree = log --graph --oneline --decorate --color --all
+  tr = log --graph --oneline --decorate --color
+  unpushed = !"PROJ_BRANCH=$(git symbolic-ref HEAD | sed 's|refs/heads/||') && git log origin/$PROJ_BRANCH..HEAD"
+  unpulled = !"PROJ_BRANCH=$(git symbolic-ref HEAD | sed 's|refs/heads/||') && git fetch && git log HEAD..origin/$PROJ_BRANCH"
 [github]
-	user = xpepper
+  user = xpepper
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path =
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true

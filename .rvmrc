@@ -1,1 +1,2 @@
+export rvm_path="$HOME/.rvm"
 export rvm_gem_options="--no-rdoc --no-ri"
