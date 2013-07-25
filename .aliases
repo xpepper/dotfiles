@@ -1,4 +1,5 @@
 alias ldots='ls -a | egrep "^\.[^\.]"'
+alias l='ls -la'
 
 alias studio='cd ~/Documents/studio'
 
