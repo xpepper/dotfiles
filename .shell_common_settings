@@ -3,7 +3,7 @@ export LC_ALL=en_US.UTF-8
 # export LC_CTYPE=en_US.UTF-8
 
 # Ruby
-export BUNDLER_EDITOR="/usr/bin/mate -w"
+export BUNDLER_EDITOR=vim
 export SVN_EDITOR=vim
 export GIT_EDITOR=vim
 
@@ -13,18 +13,18 @@ export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home
 # export PATH=$ANT_HOME/bin:$PATH
 
 # Android SDK
-# export PATH="$PATH:/Applications/android-sdk/tools/:/Applications/android-sdk/platform-tools/"
+# export PATH="$PATH:/Applications/android-sdk/tools/:/Applications/android-sdk/platform-tools/"
 
 # Amazon Ec2 stuff
-export PATH="/usr/local/ElasticLoadBalancing/bin:$PATH"
-export AWS_ELB_HOME="/usr/local/ElasticLoadBalancing"
+# export PATH="/usr/local/ElasticLoadBalancing/bin:$PATH"
+# export AWS_ELB_HOME="/usr/local/ElasticLoadBalancing"
 export PATH="/usr/local/ec2-api-tools/bin:$PATH"
 export EC2_HOME="/usr/local/ec2-api-tools"
 export PATH="/usr/local/RDSCli/bin:$PATH"
 export AWS_RDS_HOME="/usr/local/RDSCli"
 export PATH="/usr/local/ec2-ami-tools/bin:$PATH"
 export EC2_AMITOOL_HOME="/usr/local/ec2-ami-tools"
-export PATH="/usr/local/CloudWatch/bin:$PATH"
-export AWS_CLOUDWATCH_HOME="/usr/local/CloudWatch"
-export PATH="/usr/local/AutoScaling/bin:$PATH"
-export AWS_AUTO_SCALING_HOME="/usr/local/AutoScaling"
+# export PATH="/usr/local/CloudWatch/bin:$PATH"
+# export AWS_CLOUDWATCH_HOME="/usr/local/CloudWatch"
+# export PATH="/usr/local/AutoScaling/bin:$PATH"
+# export AWS_AUTO_SCALING_HOME="/usr/local/AutoScaling"
