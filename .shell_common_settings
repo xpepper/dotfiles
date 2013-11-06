@@ -11,6 +11,7 @@ export GIT_EDITOR=vim
 export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Home"
 # export ANT_HOME="/opt/local/bin/ant"
 # export PATH="$PATH:$ANT_HOME/bin"
+# export CATALINA_HOME="~/tools/apache-tomcat-7.0.42"
 
 # Android SDK
 # export PATH="$PATH:/Applications/android-sdk/tools/:/Applications/android-sdk/platform-tools/"
