@@ -28,6 +28,9 @@ alias sc="[ -f script/console ] && script/console || bundle exec rails console"
 alias ss="[ -f script/server ] && script/server || rails server"
 alias sdbc='script/dbconsole'
 
+# Vagrant
+alias v='vagrant'
+
 # for EPI
 alias epi='cd ~/Documents/workspace/epistore/epistore'
 alias tsp='cd ~/Documents/workspace/tuttosport'
@@ -40,3 +43,6 @@ alias hosts='sudo vim /etc/hosts'
 
 # MongoDB
 # alias mongostart='mongod run --config /usr/local/etc/mongod.conf'
+
+# Maven
+# alias mvn="mvn-color"
