@@ -5,6 +5,9 @@ ssid=`networksetup -getairportnetwork en0 | cut -c 24-`
 if [ $ssid = "devFarm" ]
 then
     location="futur3"
+elif [ $ssid = "xpeppers_tn" ]
+then
+    location="XPeppers Office"
 elif [ $ssid = "cabernet" ]
 then
     location="Automatic"
