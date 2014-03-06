@@ -26,8 +26,6 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git brew bundler rails rvm gem vagrant git-extras)
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
-
 # Customize to your needs...
 # not needed anymore: changing /etc/paths fixed the folders order issue
 # export PATH=$PATH:"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin"
