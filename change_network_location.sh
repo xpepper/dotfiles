@@ -7,7 +7,7 @@ then
     location="futur3"
 elif [ $ssid = "xpeppers_tn" ]
 then
-    location="XPeppers Office"
+    location="XPeppersOffice"
 elif [ $ssid = "cabernet" ]
 then
     location="Automatic"
