@@ -13,16 +13,20 @@ export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Home"
 # export PATH="$PATH:$ANT_HOME/bin"
 # export CATALINA_HOME="~/tools/apache-tomcat-7.0.42"
 
+# Go
+export GOPATH=$HOME/go-lang
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:/usr/local/Cellar/go/1.2.1/libexec/bin
+
 # Android SDK
 # export PATH="$PATH:/Applications/android-sdk/tools/:/Applications/android-sdk/platform-tools/"
 
 # Amazon Ec2 stuff
-export PATH="$PATH:/usr/local/ElasticLoadBalancing/bin"
-export PATH="$PATH:/usr/local/ec2-api-tools/bin"
-export PATH="$PATH:/usr/local/RDSCli/bin"
-export PATH="$PATH:/usr/local/ec2-ami-tools/bin"
-
-export AWS_ELB_HOME="/usr/local/ElasticLoadBalancing"
-export EC2_HOME="/usr/local/ec2-api-tools"
-export AWS_RDS_HOME="/usr/local/RDSCli"
-export EC2_AMITOOL_HOME="/usr/local/ec2-ami-tools"
+# export PATH="$PATH:/usr/local/ElasticLoadBalancing/bin"
+# export PATH="$PATH:/usr/local/ec2-api-tools/bin"
+# export PATH="$PATH:/usr/local/RDSCli/bin"
+# export PATH="$PATH:/usr/local/ec2-ami-tools/bin"
+# export AWS_ELB_HOME="/usr/local/ElasticLoadBalancing"
+# export EC2_HOME="/usr/local/ec2-api-tools"
+# export AWS_RDS_HOME="/usr/local/RDSCli"
+# export EC2_AMITOOL_HOME="/usr/local/ec2-ami-tools"
