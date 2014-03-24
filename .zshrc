@@ -24,19 +24,19 @@ COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brew bundler rails rvm gem vagrant git-extras)
+plugins=(brew bundler gem git git-extras rails rvm vagrant go)
 
 # Customize to your needs...
 # not needed anymore: changing /etc/paths fixed the folders order issue
 # export PATH=$PATH:"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
 
 source "$HOME/dotfiles/.aliases"
 source "$HOME/dotfiles/.shell_common_settings"
-source "$HOME/.epistore"
 
 # autojump
 [[ -f `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
@@ -44,5 +44,8 @@ source "$HOME/.epistore"
 # disable autocorrection
 unsetopt correct_all
 
-export RUBYOPT="-ropenssl"
+# export RUBYOPT="-ropenssl"
 # export CC=gcc-4.2
+
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
