@@ -24,7 +24,7 @@ COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew bundler gem git git-extras rails rvm vagrant go)
+plugins=(brew bundler gem git git-extras rails rvm vagrant go mvn)
 
 # Customize to your needs...
 # not needed anymore: changing /etc/paths fixed the folders order issue
@@ -32,6 +32,7 @@ plugins=(brew bundler gem git git-extras rails rvm vagrant go)
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
 
 source $ZSH/oh-my-zsh.sh
 

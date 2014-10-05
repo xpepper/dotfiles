@@ -2,8 +2,6 @@ alias ldots='ls -a | egrep "^\.[^\.]"'
 alias matedotfiles='mate $( ls -aF | egrep "^\.[^\.].+[^\/]$" )'
 alias l='ls -la'
 
-alias studio='cd ~/Documents/studio'
-
 # Git
 alias gitdiff='git diff -w | mate'
 alias gb='git branch'
@@ -31,12 +29,6 @@ alias sdbc='script/dbconsole'
 # Vagrant
 alias v='vagrant'
 
-# for EPI
-alias epi='cd ~/Documents/workspace/epistore/epistore'
-alias tsp='cd ~/Documents/workspace/tuttosport'
-alias sss='script/ec2/ssh-instances'
-alias rakelite='rake $* 2>/dev/null'
-
 alias me='script/mate.sh'
 
 alias hosts='sudo vim /etc/hosts'
@@ -44,5 +36,3 @@ alias hosts='sudo vim /etc/hosts'
 # MongoDB
 # alias mongostart='mongod run --config /usr/local/etc/mongod.conf'
 
-# Maven
-# alias mvn="mvn-color"
