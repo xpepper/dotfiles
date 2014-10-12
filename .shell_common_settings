@@ -8,7 +8,7 @@ export SVN_EDITOR=vim
 export GIT_EDITOR=vim
 
 # Java
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_55.jdk/Contents/Home/"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/"
 ## Ant
 # export ANT_HOME="/opt/local/bin/ant"
 # export PATH="$PATH:$ANT_HOME/bin"
@@ -24,7 +24,7 @@ export PATH="$LD_LIBRARY_PATH":$PATH
 # Go
 export GOPATH=$HOME/go-lang
 export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:/usr/local/Cellar/go/1.2.1/libexec/bin
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
 # Android SDK
 # export PATH="$PATH:/Applications/android-sdk/tools/:/Applications/android-sdk/platform-tools/"
