@@ -19,8 +19,6 @@ alias gap='git add -p'
 alias glod='git log --oneline --decorate'
 alias gl="git log --stat"
 
-alias workspace='cd ~/Documents/workspace/'
-
 # Rails
 alias sc="[ -f script/console ] && script/console || bundle exec rails console"
 alias ss="[ -f script/server ] && script/server || rails server"

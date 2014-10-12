@@ -4,7 +4,7 @@
   # name = Pietro Di Bello
   # email = pierodibello@gmail.com
 [core]
-  excludesfile = /Users/pietrodibello/.gitignore_global
+  excludesfile = $HOME/.gitignore_global
   editor = vim
   quotepath = false
 [push]
@@ -46,10 +46,10 @@
 [github]
   user = xpepper
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path =
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain

@@ -9,12 +9,14 @@ export GIT_EDITOR=vim
 
 # Java
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_55.jdk/Contents/Home/"
+## Ant
 # export ANT_HOME="/opt/local/bin/ant"
 # export PATH="$PATH:$ANT_HOME/bin"
+## Tomcat
 # export CATALINA_HOME="~/tools/apache-tomcat-7.0.42"
 
 # ORACLE stuff
-export LD_LIBRARY_PATH="/Users/pierodibello/tools/instantclient_11_2/"
+export LD_LIBRARY_PATH="$HOME/tools/instantclient_11_2/"
 export TNS_ADMIN="$LD_LIBRARY_PATH"
 export DYLD_LIBRARY_PATH="$LD_LIBRARY_PATH"
 export PATH="$LD_LIBRARY_PATH":$PATH
