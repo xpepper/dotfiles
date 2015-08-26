@@ -8,12 +8,13 @@ export SVN_EDITOR=vim
 export GIT_EDITOR=vim
 
 # Java
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/"
+# export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/"
+# (use jenv instead)
 ## Ant
 # export ANT_HOME="/opt/local/bin/ant"
 # export PATH="$PATH:$ANT_HOME/bin"
 ## Tomcat
-# export CATALINA_HOME="~/tools/apache-tomcat-7.0.42"
+# export CATALINA_HOME="/usr/local/opt/tomcat"
 
 # ORACLE stuff
 export LD_LIBRARY_PATH="$HOME/tools/instantclient_11_2/"
@@ -25,6 +26,9 @@ export PATH="$LD_LIBRARY_PATH":$PATH
 export GOPATH=$HOME/go-lang
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
+
+# Play framework
+export PATH=$PATH:"$HOME/tools/play"
 
 # Android SDK
 # export PATH="$PATH:/Applications/android-sdk/tools/:/Applications/android-sdk/platform-tools/"

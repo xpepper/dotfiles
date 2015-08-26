@@ -34,3 +34,5 @@ alias hosts='sudo vim /etc/hosts'
 # MongoDB
 # alias mongostart='mongod run --config /usr/local/etc/mongod.conf'
 
+# Maven
+alias mct='mvn -T 4 clean test'
