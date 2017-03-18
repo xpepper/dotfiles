@@ -1,28 +1,4 @@
 alias ldots='ls -a | egrep "^\.[^\.]"'
-alias matedotfiles='mate $( ls -aF | egrep "^\.[^\.].+[^\/]$" )'
-alias l='ls -la'
-
-# Git
-alias gw='git diff -w'
-alias gb='git branch'
-alias gc='git commit -v'
-alias gca='git commit -a -v'
-alias gco="git checkout"
-alias gd='git diff'
-alias gdc='git diff --cached' # What's added but not yet committed?
-alias gdh='git diff HEAD'
-alias gp='git push'
-alias gl='git pull'
-alias gpr='git pull --rebase'
-alias gst='git status'
-alias gap='git add -p'
-alias glod='git log --oneline --decorate'
-alias gl="git log --stat"
-
-# Rails
-alias sc="[ -f script/console ] && script/console || bundle exec rails console"
-alias ss="[ -f script/server ] && script/server || rails server"
-alias sdbc='script/dbconsole'
 
 # Vagrant
 alias v='vagrant'
@@ -30,9 +6,6 @@ alias v='vagrant'
 alias me='script/mate.sh'
 
 alias hosts='sudo vim /etc/hosts'
-
-# MongoDB
-# alias mongostart='mongod run --config /usr/local/etc/mongod.conf'
 
 # Maven
 alias mct='mvn -T 4 clean test'
