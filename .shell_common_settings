@@ -8,8 +8,8 @@ export SVN_EDITOR=vim
 export GIT_EDITOR=vim
 
 # ORACLE stuff
-export LD_LIBRARY_PATH="$HOME/tools/instantclient_11_2"
-export TNS_ADMIN="$LD_LIBRARY_PATH"
-export DYLD_LIBRARY_PATH="$LD_LIBRARY_PATH"
-export PATH="$LD_LIBRARY_PATH":$PATH
+# export LD_LIBRARY_PATH="$HOME/tools/instantclient_11_2"
+# export TNS_ADMIN="$LD_LIBRARY_PATH"
+# export DYLD_LIBRARY_PATH="$LD_LIBRARY_PATH"
+# export PATH="$LD_LIBRARY_PATH":$PATH
 
