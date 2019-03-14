@@ -7,8 +7,14 @@ alias v='vagrant'
 
 alias hosts='sudo vim /etc/hosts'
 
+# Java
+alias j9='jenv shell 9; java -version'
+
 # Maven
 alias mct='mvn -T 4 clean test'
+
+# Maven
+alias gw='./gradlew'
 
 # CLI tools (https://remysharp.com/2018/08/23/cli-improved)
 alias cat='bat'
