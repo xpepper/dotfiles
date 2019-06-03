@@ -1,20 +1,26 @@
 alias ldots='ls -a | egrep "^\.[^\.]"'
 alias ll='exa -l'
 alias l='exa -l'
+alias UP='source ~/.zshrc'
 
 # Vagrant
 alias v='vagrant'
 
 alias hosts='sudo vim /etc/hosts'
 
-# Java
-alias j9='jenv shell 9; java -version'
-
 # Maven
 alias mct='mvn -T 4 clean test'
 
-# Maven
+# Gradle
 alias gw='./gradlew'
+gww() {
+  ./gradlew "$@"
+  if [[ $? -eq 0 ]]; then 
+    say -v Luca "ho finito"
+  else
+    say -v Whisper "failed?"
+  fi
+}
 
 # CLI tools (https://remysharp.com/2018/08/23/cli-improved)
 alias cat='bat'
