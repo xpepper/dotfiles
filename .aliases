@@ -8,6 +8,10 @@ alias v='vagrant'
 
 alias hosts='sudo vim /etc/hosts'
 
+# Mercury
+alias jenkins="ssh jenkins@192.168.101.39"
+alias asgard="/Users/pierodibello/Documents/workspace/mercury-development/asvagrant"
+
 # Maven
 alias mct='mvn -T 4 clean test'
 
@@ -25,3 +29,5 @@ gww() {
 # CLI tools (https://remysharp.com/2018/08/23/cli-improved)
 alias cat='bat'
 alias ping='prettyping'
+alias more='most'
+
