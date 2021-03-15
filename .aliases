@@ -3,6 +3,7 @@ alias ll='exa -l'
 alias l='exa -l'
 alias UP='source ~/.zshrc'
 alias hosts='sudo vim /etc/hosts'
+alias hidden='ls -a | grep "^\."'
 
 # Vagrant
 alias v='vagrant'
@@ -12,6 +13,7 @@ alias jenkins="ssh jenkins@192.168.101.39"
 alias asvagrant="/Users/pierodibello/Documents/workspace/mercury-development/asvagrant"
 alias asgard=asvagrant
 alias vvv=asvagrant
+alias tunnels="/Users/pierodibello/Documents/workspace/mercury-development/phoenix-scripts/support/tunnel/restart.sh"
 
 # Maven
 alias mct='mvn -T 4 clean test'
