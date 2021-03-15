@@ -4,6 +4,7 @@ alias l='exa -l'
 alias UP='source ~/.zshrc'
 alias hosts='sudo vim /etc/hosts'
 alias hidden='ls -a | grep "^\."'
+alias tt='toggl-tracker run picky'
 
 # Vagrant
 alias v='vagrant'
