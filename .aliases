@@ -18,6 +18,7 @@ alias tunnels="/Users/pierodibello/Documents/workspace/mercury-development/phoen
 
 # Maven
 alias mct='mvn -T 4 clean test'
+alias mw='./mvnw'
 
 # Gradle
 alias gw='./gradlew'
