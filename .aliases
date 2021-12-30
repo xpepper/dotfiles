@@ -9,13 +9,6 @@ alias tt='toggl-tracker run picky'
 # Vagrant
 alias v='vagrant'
 
-# Mercury
-alias jenkins="ssh jenkins@192.168.101.39"
-alias asvagrant="/Users/pierodibello/Documents/workspace/mercury-development/asvagrant"
-alias asgard=asvagrant
-alias vvv=asvagrant
-alias tunnels="/Users/pierodibello/Documents/workspace/mercury-development/phoenix-scripts/support/tunnel/restart.sh"
-
 # Maven
 alias mct='mvn -T 4 clean test'
 alias mw='./mvnw'
