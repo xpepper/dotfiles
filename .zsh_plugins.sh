@@ -1,3 +1,4 @@
+ohmyzsh/ohmyzsh
 ohmyzsh/ohmyzsh path:plugins/brew
 ohmyzsh/ohmyzsh path:plugins/git
 ohmyzsh/ohmyzsh path:plugins/git-extras
