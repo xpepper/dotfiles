@@ -4,10 +4,17 @@ alias l='exa -l'
 alias UP='source ~/.zshrc'
 alias hosts='sudo vim /etc/hosts'
 alias hidden='ls -a | grep "^\."'
-alias tt='toggl-tracker run picky'
+alias uuid="uuidgen | tr '[:upper:]' '[:lower:]' | tr -d '\n' | tee >(pbcopy)"
 
 # Vagrant
 alias v='vagrant'
+
+# K8S
+alias k='kubectl'
+kk() {
+  KUBECONFIG=~/Documents/Dropbox/Casavo/dev-stuff/kubeconfig_pdibello_production.yaml kubectl "$@"
+}
+
 
 # Maven
 alias mct='mvn -T 4 clean test'
@@ -17,6 +24,15 @@ alias mw='./mvnw'
 alias gw='./gradlew'
 gww() {
   ./gradlew "$@"
+  if [[ $? -eq 0 ]]; then 
+    say -v Luca "ho finito"
+  else
+    say -v Whisper "failed?"
+  fi
+}
+
+makesound() {
+  make "$@"
   if [[ $? -eq 0 ]]; then 
     say -v Luca "ho finito"
   else
