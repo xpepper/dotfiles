@@ -10,7 +10,6 @@ alias uuid="uuidgen | tr '[:upper:]' '[:lower:]' | tr -d '\n' | tee >(pbcopy)"
 alias v='vagrant'
 
 # K8S
-alias k='kubectl'
 kk() {
   KUBECONFIG=~/Documents/Dropbox/Casavo/dev-stuff/kubeconfig_pdibello_production.yaml kubectl "$@"
 }

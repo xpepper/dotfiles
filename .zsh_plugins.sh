@@ -6,6 +6,7 @@ ohmyzsh/ohmyzsh path:plugins/gitfast
 ohmyzsh/ohmyzsh path:plugins/history
 ohmyzsh/ohmyzsh path:plugins/mvn
 ohmyzsh/ohmyzsh path:plugins/autojump
+ohmyzsh/ohmyzsh path:plugins/kubectl
 # ohmyzsh/ohmyzsh path:themes/nicoulaj.zsh-theme
 
 zsh-users/zsh-autosuggestions
