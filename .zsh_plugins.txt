@@ -9,18 +9,15 @@ ohmyzsh/ohmyzsh path:plugins/autojump
 ohmyzsh/ohmyzsh path:plugins/kubectl
 ohmyzsh/ohmyzsh path:plugins/kube-ps1
 ohmyzsh/ohmyzsh path:plugins/colored-man-pages kind:defer
-# ohmyzsh/ohmyzsh path:themes/nicoulaj.zsh-theme
 
 zsh-users/zsh-autosuggestions
 zsh-users/zsh-completions
 
-# zsh-users/zsh-syntax-highlighting
-# zsh-users/zsh-history-substring-search
-
-zdharma-continuum/fast-syntax-highlighting
-# nobeans/zsh-sdkman
-
+zdharma-continuum/fast-syntax-highlighting kind:defer
 mafredri/zsh-async
+
 sindresorhus/pure
+# romkatv/powerlevel10k kind:fpath
 # dfurnes/purer
 # danielefongo/shapeshift
+# ohmyzsh/ohmyzsh path:themes/nicoulaj.zsh-theme
