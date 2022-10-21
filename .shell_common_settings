@@ -6,3 +6,6 @@ export LC_ALL=en_US.UTF-8
 export BUNDLER_EDITOR=vim
 export SVN_EDITOR=vim
 export GIT_EDITOR=vim
+
+# Casavo
+export KUBECONFIG=/Users/pietro.dibello/Documents/Dropbox/Casavo/dev-stuff/kubeconfig_pdibello_production.yaml:/Users/pietro.dibello/Documents/Dropbox/Casavo/dev-stuff/kubeconfig_pdibello_staging.yaml
