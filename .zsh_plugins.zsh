@@ -30,6 +30,7 @@ fpath+=( /Users/pietro.dibello/.cache/antidote/https-COLON--SLASH--SLASH-github.
 source /Users/pietro.dibello/.cache/antidote/https-COLON--SLASH--SLASH-github.com-SLASH-zsh-users-SLASH-zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
 fpath+=( /Users/pietro.dibello/.cache/antidote/https-COLON--SLASH--SLASH-github.com-SLASH-zsh-users-SLASH-zsh-completions )
 source /Users/pietro.dibello/.cache/antidote/https-COLON--SLASH--SLASH-github.com-SLASH-zsh-users-SLASH-zsh-completions/zsh-completions.plugin.zsh
+fpath+=( /Users/pietro.dibello/.cache/antidote/https-COLON--SLASH--SLASH-github.com-SLASH-ahmetb-SLASH-kubectx/completion )
 fpath+=( /Users/pietro.dibello/.cache/antidote/https-COLON--SLASH--SLASH-github.com-SLASH-zdharma-continuum-SLASH-fast-syntax-highlighting )
 zsh-defer source /Users/pietro.dibello/.cache/antidote/https-COLON--SLASH--SLASH-github.com-SLASH-zdharma-continuum-SLASH-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 fpath+=( /Users/pietro.dibello/.cache/antidote/https-COLON--SLASH--SLASH-github.com-SLASH-mafredri-SLASH-zsh-async )

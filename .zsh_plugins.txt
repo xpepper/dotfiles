@@ -14,6 +14,7 @@ ohmyzsh/ohmyzsh path:plugins/colored-man-pages kind:defer
 zsh-users/zsh-autosuggestions
 zsh-users/zsh-completions
 
+ahmetb/kubectx path:completion kind:fpath
 zdharma-continuum/fast-syntax-highlighting kind:defer
 mafredri/zsh-async
 
