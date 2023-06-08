@@ -24,6 +24,10 @@ gww() {
   fi
 }
 
+alias gradle-all-deps='./gradlew dependencies $(./gradlew -q projects \
+    | grep -Fe ---\ Project \
+    | sed -Ee "s/^.+--- Project '"'([^']+)'/\1:dependencies/"'")'
+
 makesound() {
   make "$@"
   if [[ $? -eq 0 ]]; then 
