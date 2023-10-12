@@ -9,6 +9,9 @@ alias uuid="uuidgen | tr '[:upper:]' '[:lower:]' | tr -d '\n' | tee >(pbcopy)"
 # Vagrant
 alias v='vagrant'
 
+# K8S
+alias kkk='kubectx'
+
 # Maven
 alias mct='mvn -T 4 clean test'
 alias mw='./mvnw'
@@ -36,6 +39,16 @@ makesound() {
     say -v Whisper "failed?"
   fi
 }
+
+mixsound() {
+  mix "$@"
+  if [[ $? -eq 0 ]]; then 
+    say -v Luca "ho finito"
+  else
+    say -v Whisper "failed?"
+  fi
+}
+
 
 # CLI tools (https://remysharp.com/2018/08/23/cli-improved)
 alias cat='bat'

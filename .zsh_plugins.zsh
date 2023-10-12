@@ -35,5 +35,6 @@ fpath+=( /Users/pietro.dibello/.cache/antidote/https-COLON--SLASH--SLASH-github.
 zsh-defer source /Users/pietro.dibello/.cache/antidote/https-COLON--SLASH--SLASH-github.com-SLASH-zdharma-continuum-SLASH-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 fpath+=( /Users/pietro.dibello/.cache/antidote/https-COLON--SLASH--SLASH-github.com-SLASH-mafredri-SLASH-zsh-async )
 source /Users/pietro.dibello/.cache/antidote/https-COLON--SLASH--SLASH-github.com-SLASH-mafredri-SLASH-zsh-async/async.plugin.zsh
-fpath+=( /Users/pietro.dibello/.cache/antidote/https-COLON--SLASH--SLASH-github.com-SLASH-sindresorhus-SLASH-pure )
-source /Users/pietro.dibello/.cache/antidote/https-COLON--SLASH--SLASH-github.com-SLASH-sindresorhus-SLASH-pure/pure.plugin.zsh
+fpath+=( /Users/pietro.dibello/.cache/antidote/https-COLON--SLASH--SLASH-github.com-SLASH-romkatv-SLASH-powerlevel10k )
+source /Users/pietro.dibello/.cache/antidote/https-COLON--SLASH--SLASH-github.com-SLASH-romkatv-SLASH-powerlevel10k/powerlevel10k.zsh-theme
+source /Users/pietro.dibello/.cache/antidote/https-COLON--SLASH--SLASH-github.com-SLASH-romkatv-SLASH-powerlevel10k/powerlevel9k.zsh-theme

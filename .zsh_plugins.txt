@@ -18,8 +18,8 @@ ahmetb/kubectx path:completion kind:fpath
 zdharma-continuum/fast-syntax-highlighting kind:defer
 mafredri/zsh-async
 
-sindresorhus/pure
-# romkatv/powerlevel10k kind:fpath
+# sindresorhus/pure
+romkatv/powerlevel10k
 # dfurnes/purer
 # danielefongo/shapeshift
 # ohmyzsh/ohmyzsh path:themes/nicoulaj.zsh-theme
