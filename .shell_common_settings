@@ -8,4 +8,4 @@ export SVN_EDITOR=vim
 export GIT_EDITOR=vim
 
 # Casavo
-export KUBECONFIG=/Users/pietro.dibello/Documents/Dropbox/Casavo/dev-stuff/kubeconfig_pdibello_production.yaml:/Users/pietro.dibello/Documents/Dropbox/Casavo/dev-stuff/kubeconfig_pdibello_staging.yaml:/Users/pietro.dibello/Documents/Dropbox/Casavo/dev-stuff/kubeconfig_pdibello_alfa_serve_data.yaml
+export KUBECONFIG=/Users/pietro.dibello/.kube/config:/Users/pietro.dibello/Documents/Dropbox/Casavo/dev-stuff/kubeconfig_pdibello_production.yaml:/Users/pietro.dibello/Documents/Dropbox/Casavo/dev-stuff/kubeconfig_pdibello_staging.yaml:/Users/pietro.dibello/Documents/Dropbox/Casavo/dev-stuff/kubeconfig_pdibello_alfa_serve_data.yaml

@@ -1,8 +1,6 @@
 [user]
   name = Pietro Di Bello
-  email = pietro.dibello@xpeppers.com
-  # name = Pietro Di Bello
-  # email = pierodibello@gmail.com
+  email = pierodibello@gmail.com
 [core]
   excludesfile = $HOME/.gitignore_global
   editor = vim
