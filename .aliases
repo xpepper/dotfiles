@@ -1,6 +1,14 @@
 alias ldots='ls -a | egrep "^\.[^\.]"'
-alias ll='exa -l'
-alias l='exa -l'
+
+# alias ll='exa -l'
+# alias l='exa -l'
+## Using lsd https://github.com/lsd-rs/lsd as ls replacement
+alias ls='lsd'
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'
+
 alias UP='source ~/.zshrc'
 alias hosts='sudo vim /etc/hosts'
 alias hidden='ls -a | grep "^\."'
