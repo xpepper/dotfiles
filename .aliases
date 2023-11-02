@@ -7,8 +7,7 @@ alias ldots='ls -a | egrep "^\.[^\.]"'
 ## Using lsd (https://github.com/lsd-rs/lsd) as ls replacement
 alias ls='lsd'
 alias l='ls -l'
-alias la='ls -a'
-alias lla='ls -la'
+alias ll='ls -la'
 alias lt='ls --tree'
 
 alias UP='source ~/.zshrc'
