@@ -10,6 +10,9 @@ alias l='ls -l'
 alias ll='ls -la'
 alias lt='ls --tree'
 
+## Elixir
+alias mta='mix test.all'
+
 alias UP='source ~/.zshrc'
 alias hosts='sudo vim /etc/hosts'
 alias hidden='ls -a | grep "^\."'
@@ -19,7 +22,7 @@ alias uuid="uuidgen | tr '[:upper:]' '[:lower:]' | tr -d '\n' | tee >(pbcopy)"
 alias v='vagrant'
 
 # K8S
-alias kkk='kubectx'
+alias kk='kubectx'
 
 # Maven
 alias mct='mvn -T 4 clean test'
@@ -58,6 +61,11 @@ mixsound() {
   fi
 }
 
+konnect() {
+  pod=$(kubectl get pods | grep -e "$1" | awk 'NR==1{print $1}')
+  echo "connecting to $pod..."
+  kubectl exec -it $pod -- bash
+}
 
 # CLI tools (https://remysharp.com/2018/08/23/cli-improved)
 alias cat='bat'
