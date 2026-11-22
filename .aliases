@@ -10,6 +10,10 @@ alias l='ls -l'
 alias ll='ls -la'
 alias lt='ls --tree'
 
+## nchat
+alias telegram='nchat -d ~/.config/nchat-telegram'
+alias whatsapp='nchat -d ~/.config/nchat-whatsapp'
+
 ## Elixir
 alias mta='mix test.all'
 
