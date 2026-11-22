@@ -3,3 +3,8 @@ export LC_ALL=en_US.UTF-8
 # export LC_CTYPE=en_US.UTF-8
 
 export GIT_EDITOR=vim
+
+# Claude Code: run Bash tool commands in bash 5, the shell that agents write for
+if [ -x /opt/homebrew/bin/bash ]; then
+  export CLAUDE_CODE_SHELL=/opt/homebrew/bin/bash
+fi
