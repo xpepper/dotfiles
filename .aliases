@@ -24,8 +24,9 @@ alias uuid="uuidgen | tr '[:upper:]' '[:lower:]' | tr -d '\n' | tee >(pbcopy)"
 # GitHub CLI
 alias ghv='gh pr view --web'
 alias ghr='gh repo view --web'
+
 pr-summarise() {
-  gh pr-summarise "$@" --yes --force 
+  gh pr-summarise "$@" --yes --force --backend copilot
 }
 
 # LLMs
@@ -86,7 +87,7 @@ konnect() {
 }
 
 # CLI tools (https://remysharp.com/2018/08/23/cli-improved)
-alias cat='bat --no-pager'
+# alias cat='bat --no-pager'
 export BAT_STYLE=plain
 alias ping='prettyping'
 alias more='most'
